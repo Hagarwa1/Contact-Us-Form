@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>HTML Form</title>
+		<style>
+			h1 {
+				text-align: center;
+				font-family: Arial, sans-serif;
+			}
+			.Form {
+				justify-content: center;
+				font-family: Arial, sans-serif;
+				display: flex;
+			}
+			input[type="text"], select, textarea {
+				width: 100%;
+				padding: 10px;
+			}
+			input[type="submit"] {
+				background-color: #4CAF50;
+				color: white;
+				padding: 10px;
+				border: none;
+				cursor: pointer;
+				font-size: 16px;
+			}
+	</style>
+	</head>
+	<body>	
+		<h1>Contact Us</h1>
+		<div class="Form">
+			<form action="results.html" method="get">
+				<p>Name: <input type="text" id="name" name="name"></p>
+				<p>Email: <input type="text" id="email" name="email"></p>
+				<label for="sel">State:</label>
+				<select id="sel" name="sel">
+					<option value="Choose state">Choose state</option>
+					<option value="Alabama">Alabama</option>
+					<option value="California">California</option>
+					<option value="Delaware">Delaware</option>
+					<option value="Florida">Florida</option>
+					<option value="Georgia">Georgia</option>
+					<option value="Hawaii">Hawaii</option>
+					<option value="Idaho">Idaho</option>
+					<option value="Kansas">Kansas</option>
+					<option value="Louisiana">Louisiana</option>
+					<option value="Maine">Maine</option>
+					<option value="Nebraska">Nebraska</option>
+					<option value="Ohio">Ohio</option>
+					<option value="Pennsylvania">Pennsylvania</option>
+					<option value="Rhode Island">Rhode Island</option>
+					<option value="South Carolina">South Carolina</option>
+					<option value="Tennessee">Tennessee</option>
+				</select>
+				<p>Please select your contact preference:</p>
+				<input type="radio" id="remail" name="remail" value="email">
+				<label for="remail">Email</label>
+				<input type="radio" class="phone" name="phone" value="phone">
+				<label for="remail">Phone</label>
+				<input type="radio" class="text" name="text" value="text">
+				<label for="remail">Text</label>
+				<p>Comment: <textarea id="textarea" name="textarea"></textarea>
+				<p><input type="checkbox" id="subscribe" name="subscribe" value="yes"> Subscribe to email list</p>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</body>
+</html>
